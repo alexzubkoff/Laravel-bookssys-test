@@ -60,7 +60,7 @@ class BooksController extends Controller
 
     public function searchbookname($request)
     {
-        $books = Books::where('name', 'LIKE', $request . '%')->take(1)->get();
+        $books = Books::where('name', 'LIKE', $request . '%')->get();
         return view('bookfind',['books'=>$books]);
     }
 
