@@ -33,3 +33,5 @@ Route::get('/bookdate/books/update/{id}','BooksController@searchpublicationdate'
 Route::get('/bookdate/books/delete/{id}','BooksController@searchpublicationdate');
 Route::get('/author/{authorname}','BooksController@searchauthorname');
 Route::get('autocomplete',array('as'=>'autocomplete','uses'=> 'BooksController@autocomplete'));
+
+
